@@ -1,4 +1,4 @@
-const mediaQuery=window.matchMedia('(max-width:600px)');
+var mediaQuery=window.matchMedia("(max-width:600px)");
 if(mediaQuery.matches){
     $("h1").html("Press <button>Start</button>Button To Start");
     $("h1 button").addClass("start-button");
@@ -21,7 +21,7 @@ $(document).keypress(function(event){
 
 function wrong(){
     $("#level-title").text("Game Over,Press R key to restart"); 
-    const media_Query=window.matchMedia('(max-width:600px)');
+    var media_Query=window.matchMedia("(max-width:600px)");
     if(media_Query.matches){
         $("body").removeClass("body-padding");
         $("h1").html("Game Over,Press <button>Restart</button> key to restart"); 
