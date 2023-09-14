@@ -5,7 +5,7 @@ body {
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 100px;
   margin:  5%;
   color: #FEF2BF;
 }
@@ -70,7 +70,8 @@ body {
     margin-right: 10px;
   }
   body{
-    padding-top: 65px;
+    padding-top:20%;
+    padding-bottom:20%;
   }
 }
 
