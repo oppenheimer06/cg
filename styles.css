@@ -62,7 +62,7 @@ body {
   }
   
 }
-@media (max-width:460px){
+@media (max-width:500px){
   .btn{
     height: 70px;
     width: 70px;
