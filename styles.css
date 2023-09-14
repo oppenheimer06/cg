@@ -62,7 +62,7 @@ body {
   }
   
 }
-@media (max-width:500px){
+@media (max-width:450px){
   .btn{
     height: 70px;
     width: 70px;
@@ -71,6 +71,9 @@ body {
   }
   #level-title{
     font-size: 1.8rem;
+  }
+  body{
+    padding-top: 200px;
   }
 }
 
@@ -83,8 +86,4 @@ body {
   background-color: red;
   font-size: 25px;
   
-}
-
-.body-padding{
-  padding-top: 200px;
 }
