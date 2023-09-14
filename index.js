@@ -1,4 +1,4 @@
-var mediaQuery=window.matchMedia("(max-width:600px)");
+var mediaQuery=window.matchMedia('(max-width:600px)');
 if(mediaQuery.matches){
     $("h1").html("Press <button>Start</button>Button To Start");
     $("h1 button").addClass("start-button");
@@ -21,11 +21,10 @@ $(document).keypress(function(event){
 }})   
 
 function wrong(){
-    $("#level-title").text("Game Over,Press R key to restart"); 
-    var media_Query=window.matchMedia("(max-width:600px)");
-    if(media_Query.matches){
+    $("h1").html("Game Over,Press R key to restart"); 
+    var mediaQuery1=window.matchMedia('(max-width:600px)');
+    if(mediaQuery1.matches){
         $("body").removeClass("body-padding");
-        $("body").css("background-color","pink");
         $("h1").html("Game Over,Press <button>Restart</button> key to restart"); 
         $("h1 button").addClass("start-button");
         $("h1 button").click(function(){
