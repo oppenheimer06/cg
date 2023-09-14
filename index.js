@@ -3,6 +3,7 @@ if(mediaQuery.matches){
     $("h1").html("Press <button>Start</button>Button To Start");
     $("h1 button").addClass("start-button");
     $("h1 button").click(function(){
+        $("h1 button").off();
         $("body").addClass("body-padding");
         $("#level-title").text("Level 1");
         level_1();
@@ -24,6 +25,7 @@ function wrong(){
     var media_Query=window.matchMedia("(max-width:600px)");
     if(media_Query.matches){
         $("body").removeClass("body-padding");
+        $("body").css("background-color","pink");
         $("h1").html("Game Over,Press <button>Restart</button> key to restart"); 
         $("h1 button").addClass("start-button");
         $("h1 button").click(function(){
