@@ -32,7 +32,7 @@ function wrong(){
             level_1();
         })
     }
-    var wrong=new Audio("sounds/wrong.mp3")
+    var wrong=new Audio("wrong.mp3")
     wrong.play();
     $("body").addClass("red");
      setTimeout(function(){
