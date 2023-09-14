@@ -1,4 +1,4 @@
-var mediaQuery=window.matchMedia('(max-width:600px)');
+const mediaQuery=window.matchMedia('(max-width:600px)');
 if(mediaQuery.matches){
     $("h1").html("Press <button>Start</button>Button To Start");
     $("h1 button").addClass("start-button");
@@ -22,12 +22,12 @@ $(document).keypress(function(event){
 
 function wrong(){
     $("h1").html("Game Over,Press R key to restart"); 
-    var mediaQuery1=window.matchMedia('(max-width:600px)');
+    const mediaQuery1=window.matchMedia('(max-width:600px)');
     if(mediaQuery1.matches){
         $("body").removeClass("body-padding");
         $("h1").html("Game Over,Press <button>Restart</button> key to restart"); 
         $("h1 button").addClass("start-button");
-        $("h1 button").click(function(){
+        $(".start-button").click(function(){
             $("body").addClass("body-padding");    
             $("#level-title").text("Level 1");
             level_1();
