@@ -19,6 +19,7 @@ $(document).keypress(function(event){
 function wrong(){
     $("h1").html("Game Over,Press R key to restart"); 
     $("h1").click(function(){
+        $("h1").off();
         level_1();
     })
     var wrong=new Audio("wrong.mp3")
