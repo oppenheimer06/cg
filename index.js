@@ -20,6 +20,7 @@ function wrong(){
     $("h1").text("Game Over,Press R key to restart"); 
     $("h1").click(function(){
         $("h1").off();
+        $("h1").text("Level 1");
         level_1();
     })
     var wrong=new Audio("wrong.mp3")
